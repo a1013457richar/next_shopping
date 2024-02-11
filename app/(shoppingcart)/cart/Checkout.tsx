@@ -8,7 +8,7 @@ import { Elements } from "@stripe/react-stripe-js";
 import { useCheckoutStore } from "@/store/useCheckoutStore";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import CheckoutForm from "./CheckoutForm";
+import CheckoutForm from "../components/CheckOutForm";
 import { CartEntry as ICartEntry } from "use-shopping-cart/core";
 import toast from "react-hot-toast";
 
