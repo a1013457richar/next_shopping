@@ -9,14 +9,11 @@ export const fetchStripeProduct = async () => {
     const product = await stripe.products.list({
       limit: 99,
     });
-    console.log("🚀 ~ getProduct ~ product:", product)
     const priceMap = new Map();
 
     const prices = await stripe.prices.list({
       limit: 99,
     });
-    console.log("🚀 ~ getProduct ~ prices:", prices)
-
     prices.data.forEach((price) => {
       if (price.product) {
         if (!priceMap.has(price.product)) {

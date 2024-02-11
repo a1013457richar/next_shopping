@@ -45,7 +45,6 @@ const CheckOut = ({
           throw new Error("network issues");
         }
         const data = await response.json();
-        console.log("🚀 ~ fetchClientSecret ~ data:", data)
         
         if(data&&data.paymentIntent){
           setClientSecret(data.paymentIntent.client_secret);

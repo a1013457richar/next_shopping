@@ -27,3 +27,5 @@ const getCurrentUser = async () => {
 };
 
 export default getCurrentUser;
+
+export const dynamic = 'force-dynamic'
